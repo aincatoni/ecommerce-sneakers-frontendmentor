@@ -1,0 +1,17 @@
+@use 'initial';
+@use 'variables';
+@use 'header';
+@use 'navbar';
+@use 'modal-navbar';
+
+.main-container{
+    width: 375px;
+    margin:auto;
+    outline: 1px solid black;
+    @media(min-width: 1115px) {
+            width: 1115px;
+    }
+}
+
+
+
