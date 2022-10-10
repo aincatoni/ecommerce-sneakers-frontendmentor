@@ -10,7 +10,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 18px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -95,13 +95,48 @@
       </article>
     </section>
 
+    <!-- inicio cart modal -->
+    <div class="cart-modal">
+      <p class="cart-modal__title">Cart</p>
+      <div class="cart-modal__checkout-container">  
+        <div class="cart-modal__details-container">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail">
+          <div>
+            <p class="cart-modal__product">Autum Limited Edition...</p>
+            <p class="cart-modal__price">125 x 3 <span>$375.00</span></p>
+          </div>
+          <img class="cart-modal__delete" src="./images/icon-delete.svg" alt="icon delete">
+        </div>
+      </div>
+      <button class="cart-modal__checkout">Checkout</button>
+    </div>
+    <!-- final cart modal -->
+
+    <!-- inicio gallery modal -->
+    <div class="modal-gallery__background">
+      <article class="modal-gallery">
+        <img class="modal-gallery__close" src="./images/icon-close.svg" alt="icon close">
+        <div class="modal-gallery__image-container">
+          <img class="modal-gallery__previous" src="./images/icon-previous.svg" alt=" icon previous">
+          <img class="modal-gallery__next" src="./images/icon-next.svg" alt="icon next">
+        </div>
+        <div class="modal-gallery__thumbnails">
+          <img id="m1" class="modal-gallery__thumbnails" src="./images/image-product-1-thumbnail.jpg" alt="thumbnail">
+          <img id="m2" class="modal-gallery__thumbnails" src="./images/image-product-2-thumbnail.jpg" alt="thumbnail">
+          <img id="m3" class="modal-gallery__thumbnails" src="./images/image-product-3-thumbnail.jpg" alt="thumbnail">
+          <img id="m4" class="modal-gallery__thumbnails" src="./images/image-product-4-thumbnail.jpg" alt="thumbnail">
+        </div>
+      </article>
+    </div>
+    <!-- fin gallery modal -->
+
   </main>
 
 
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://aincatoni.com" target="_blank">Ain Catoni</a>.
+  </footer>
 </body>
 </html>
