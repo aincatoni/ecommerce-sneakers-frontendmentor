@@ -2,7 +2,6 @@
 @use 'mixins';
 
 .details {
-outline: 1px solid green;
 padding: 24px;
 &__company {
     color: v.$Orange;
@@ -22,7 +21,7 @@ padding: 24px;
     margin-bottom: 24px;
 }
 &__prices{
-    border: 1px solid red;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
