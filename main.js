@@ -38,7 +38,24 @@ addToCartBtn.addEventListener("click", () => {
 const cartIconBtn = document.querySelector('.header__cart-avatar');
 const cartModal = document.querySelector('.cart-modal');
 
-cartIconBtn.addEventListener('click', ()=>{
-cartModal.style.display = "grid";
+cartIconBtn.addEventListener("click", () => {
+  cartModal.classList.toggle("show");
 });
+
+// muestra el menu modal mobile
+
+const iconOpenMenuMobile = document.querySelector(".header__menu");
+const iconCloseMenuMobile = document.querySelector(".modal-navbar__close-icon");
+const modalMenuMobile = document.querySelector(".modal-navbar__background");
+const menuMobile = document.querySelector(".modal-navbar");
+
+iconOpenMenuMobile.addEventListener("click", () => {
+  modalMenuMobile.classList.toggle("show");
+  menuMobile.classList.toggle("show");
+});
+iconCloseMenuMobile.addEventListener("click", () => {
+  modalMenuMobile.classList.toggle("show");
+  menuMobile.classList.toggle("show");
+});
+
 
