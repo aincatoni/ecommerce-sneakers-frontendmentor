@@ -31,3 +31,14 @@ addToCartBtn.addEventListener("click", () => {
   cartNotification.innerText = lastValue;
   cartNotification.style.display = "block";
 });
+
+
+// muestra el modal con el detalle del carro
+
+const cartIconBtn = document.querySelector('.header__cart-avatar');
+const cartModal = document.querySelector('.cart-modal');
+
+cartIconBtn.addEventListener('click', ()=>{
+cartModal.style.display = "grid";
+});
+

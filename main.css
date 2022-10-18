@@ -355,7 +355,7 @@ body {
   border-radius: 8px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   position: absolute;
-  top: 75;
+  top: 75px;
   left: 50%;
   transform: translateX(-50%);
   background-color: hsl(0deg, 0%, 100%);
@@ -406,6 +406,13 @@ body {
   cursor: pointer;
   opacity: 0.5;
   transition: 0.3;
+}
+@media (min-width: 1115px) {
+  .cart-modal {
+    top: 95px;
+    left: 55%;
+    transform: translateX(55%);
+  }
 }
 
 .modal-gallery {

@@ -8,7 +8,7 @@
     border-radius: 8px;
     box-shadow: 2px 2px 4px rgba($color: #00000027, $alpha: 0.4);
     position: absolute;
-    top: 75;
+    top: 75px;
     left: 50%;
     transform: translateX(-50%);
     background-color: v.$White;
@@ -43,6 +43,12 @@
     }
     &__checkout {
         @include mixins.button
+    }
+
+    @include mixins.desktop  {
+        top: 95px;
+        left: 55%;
+        transform: translateX(55%);
     }
 
 }
