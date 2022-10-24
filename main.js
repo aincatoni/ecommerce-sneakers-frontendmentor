@@ -42,7 +42,7 @@ const cartIconBtn = document.querySelector(".header__cart");
 const cartModal = document.querySelector('.cart-modal');
 
 cartIconBtn.addEventListener("click", () => {
-  cartModal.classList.toggle("show");
+  cartModal.classList.toggle("d-block");
 });
 
 
@@ -59,12 +59,30 @@ const modalMenuMobile = document.querySelector(".modal-navbar__background");
 const menuMobile = document.querySelector(".modal-navbar");
 
 iconOpenMenuMobile.addEventListener("click", () => {
-  modalMenuMobile.classList.toggle("show");
-  menuMobile.classList.toggle("show");
+  modalMenuMobile.classList.toggle("d-block");
+  menuMobile.classList.toggle("d-block");
 });
 iconCloseMenuMobile.addEventListener("click", () => {
-  modalMenuMobile.classList.toggle("show");
-  menuMobile.classList.toggle("show");
+  modalMenuMobile.classList.toggle("d-block");
+  menuMobile.classList.toggle("d-block");
 });
 
+// muestra el gallery modal
+const modalGalleryBackground = document.querySelector(
+  ".modal-gallery__background"
+);
+const modalGallery = document.querySelector(".modal-gallery");
+const openModalGallery = document.querySelector(".gallery");
+const closeModalGallery = document.querySelector(
+  ".modal-gallery__close-container"
+);
 
+openModalGallery.addEventListener("click", () => {
+  modalGalleryBackground.classList.toggle("d-grid");
+  modalGallery.classList.toggle("d-grid");
+});
+
+closeModalGallery.addEventListener("click", () => {
+  modalGalleryBackground.classList.toggle("d-grid");
+  modalGallery.classList.toggle("d-grid");
+});
