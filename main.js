@@ -23,6 +23,7 @@ minusBtn.addEventListener("click", () => {
 // Agrega el total de productos al carro, cuando se presiona el botón Add to cart
 const addToCartBtn = document.querySelector(".details__button");
 let cartNotification = document.querySelector(".header__cart--notification");
+let cartModalQuantity = document.querySelector(".cart-modal__price");
 
 addToCartBtn.addEventListener("click", () => {
   let lastValue = parseInt(cartNotification.innerText);
@@ -30,17 +31,25 @@ addToCartBtn.addEventListener("click", () => {
 
   cartNotification.innerText = lastValue;
   cartNotification.style.display = "block";
+  cartModalQuantity.innerHTML = `125 x ${lastValue} <span> $${
+    125 * lastValue
+  }</span>`;
 });
-
 
 // muestra el modal con el detalle del carro
 
-const cartIconBtn = document.querySelector('.header__cart-avatar');
+const cartIconBtn = document.querySelector(".header__cart");
 const cartModal = document.querySelector('.cart-modal');
 
 cartIconBtn.addEventListener("click", () => {
   cartModal.classList.toggle("show");
 });
+
+
+// cambia la cantidad en el model
+
+
+
 
 // muestra el menu modal mobile
 
